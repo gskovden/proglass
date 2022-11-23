@@ -1,0 +1,7 @@
+.copyright {
+  background-color: black;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

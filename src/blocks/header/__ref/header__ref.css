@@ -1,0 +1,15 @@
+.header__ref {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 5px;
+  }
+
+.header__ref:hover {
+  border-bottom: 3px solid palevioletred;
+}
+
+.header__ref[aria-current="page"] {
+  border-bottom: 3px solid palevioletred;
+}

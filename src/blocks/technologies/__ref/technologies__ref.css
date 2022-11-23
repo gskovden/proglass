@@ -1,0 +1,11 @@
+.technologies__ref {
+  border: 1px solid palevioletred;
+  background-color: palevioletred;
+  padding: 5px 7px;
+  border-radius: 100px;
+  align-self: flex-end;
+}
+
+.technologies__ref:hover {
+  opacity: .8;
+}

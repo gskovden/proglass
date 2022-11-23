@@ -1,0 +1,7 @@
+.contacts__map {
+  width: 100%;
+  height: calc(100% - 95px);
+  grid-area: map;
+  margin-left: 25px;
+  margin-top: 70px;
+}

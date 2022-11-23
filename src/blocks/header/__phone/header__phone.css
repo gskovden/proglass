@@ -1,0 +1,9 @@
+.header__phone {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

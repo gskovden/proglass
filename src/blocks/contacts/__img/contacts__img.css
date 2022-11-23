@@ -1,0 +1,9 @@
+.contacts__img {
+  width: 30px;
+  height: 30px;
+  opacity: .8;
+}
+
+.contacts__img:hover {
+  opacity: 1;
+}

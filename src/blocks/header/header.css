@@ -1,0 +1,10 @@
+.header {
+  border-bottom: 1px solid #2A2C2F;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 103;
+  width: 100%;
+  background-color: white;
+}

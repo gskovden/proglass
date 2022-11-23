@@ -1,0 +1,13 @@
+.contacts {
+  height: calc(100vh - 70px);
+  display: grid;
+  grid-template-areas:
+  "map title"
+  "map block-area";
+  margin: 0;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  background-color: #2a2c2f;
+  color: white;
+}

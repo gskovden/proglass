@@ -1,0 +1,7 @@
+.main {
+  margin: 120px 200px 0 200px;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

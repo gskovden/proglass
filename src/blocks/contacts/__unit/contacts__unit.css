@@ -1,0 +1,4 @@
+.contacts__unit {
+  display: flex;
+  flex-direction: row;
+}

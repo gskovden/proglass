@@ -1,0 +1,6 @@
+.technologies__item {
+  padding: 20px;
+  list-style: none;
+  display: grid;
+  gap: 20px;
+}

@@ -1,0 +1,7 @@
+.contacts__block {
+  grid-area: block-area;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  margin-right: 25px;
+}

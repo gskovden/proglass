@@ -1,0 +1,9 @@
+.main__subtitle {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main__subtitle:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,0 +1,8 @@
+.header__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  margin: 0 100px 0 100px;
+}
