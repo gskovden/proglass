@@ -1,0 +1,9 @@
+.cases {
+  margin: 0 200px;
+}
+
+@media screen and (max-width: 1300px) {
+  .cases {
+    margin: 0 50px;
+  }
+}

@@ -2,3 +2,41 @@
   font-size: 56px;
   width: fit-content;
 }
+
+@media screen and (max-width: 1400px) {
+  .main__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main__title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main__title {
+    grid-area: title;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__title {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .main__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main__title {
+    font-size: 24px;
+  }
+}

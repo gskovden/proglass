@@ -1,3 +1,13 @@
 .section {
-  padding: 0;
+  padding-top: 15px;
+}
+
+.section:first-of-type {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .section:first-of-type {
+    padding-top: 100px;
+  }
 }

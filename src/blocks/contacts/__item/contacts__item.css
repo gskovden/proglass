@@ -1,8 +1,8 @@
 .contacts__item {
   text-decoration: none;
-  color: white;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.23;
   margin: 0 0 15px 0;
+  color: black;
 }

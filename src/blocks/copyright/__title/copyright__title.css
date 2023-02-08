@@ -1,4 +1,19 @@
 .copyright__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
   color: grey;
-  margin-left: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .copyright__title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .copyright__title {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
 }

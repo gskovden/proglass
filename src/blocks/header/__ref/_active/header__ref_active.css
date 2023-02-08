@@ -1,3 +1,4 @@
 .header__ref_active {
-  border-bottom: 3px solid palevioletred;
+  border-bottom: 1px solid #FF6600;
+  color: #FF6600;
 }

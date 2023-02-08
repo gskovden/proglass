@@ -1,3 +1,14 @@
 .consultation {
-  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .consultation {
+    margin: 0 25px;
+  }
 }

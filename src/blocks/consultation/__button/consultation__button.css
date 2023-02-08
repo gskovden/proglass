@@ -1,6 +1,16 @@
 .consultation__button {
-  border-radius: 100px;
   margin-top: 20px;
   cursor: pointer;
   height: 40px;
+  background-color: #FF6600;
+  border: 1px solid #FF6600;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  width: 50%;
+}
+
+.consultation__button:hover {
+  opacity: .9;
 }

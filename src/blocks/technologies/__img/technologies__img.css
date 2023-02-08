@@ -1,3 +1,16 @@
 .technologies__img {
  width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .technologies__img {
+    width: 50%;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .technologies__img {
+    width: 100%;
+  }
+}

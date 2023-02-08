@@ -4,82 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProGlass</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('fP_nTRawqJC3YlV0e');
+      })();
+  </script>
 </head>
 <body class="page">
   <header class="header">
     <div class="header__block">
-      <a class="header__logo" href="#main"><div class="header__logo"><p class="header__orange">Pro</p>Glass by<p class="header__orange">&nbsp;Pro</p>Store</div></a>
+      <a class="header__logo" href="#main"><img src="<%=require('../src/images/logo/logo.webp')%>" alt="лого" class="logo"></a>
         <ul class="header__links">
           <li class="header__link"><a class="header__ref" href="#main">Главная</a></li>
           <li class="header__link"><a class="header__ref" href="#technologies">Технология</a></li>
-          <li class="header__link"><a class="header__ref" href="#assistance">Услуги</a></li>
+          <li class="header__link"><a class="header__ref" href="#cases">Услуги</a></li>
           <li class="header__link"><a class="header__ref" href="#contacts">Контакты</a></li>
         </ul>
       <a class="header__phone" href="tel:+79613599933">
         <img src="<%=require('../src/images/header/Phone.svg')%>" alt="телефон" class="header__img">
         <p class="header__tel">+7 961 35 999 33</p>
       </a>
-      <a class="header__call">Перезвоните мне</a>
+      <a class="header__call">Получить консультацию</a>
     </div>
   </header>
 
   <section class="section main" id="main">
     <div class="main__block">
-      <h1 class="main__title">Профессиональная замена</h1>
-      <h1 class="main__title">стекол на устройствах</h1>
-      <h2 class="main__subtitle">- Apple Watch -</h2>
-      <h2 class="main__subtitle">- Apple iPhone -</h2>
-      <h2 class="main__subtitle">- Apple iPad -</h2>
-      <h2 class="main__subtitle">- Apple MacBook -</h2>
-      <h2 class="main__subtitle">- Samsung Galaxy -</h2>
-      <form class="main__unit">
-        <input class="main__input" type="tel" id="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
-        <button class="main__submit" type="submit">Узнать цену</button>
+      <h1 class="main__title">Профессиональная замена стекол на устройствах</h1>
+      <form class="main__unit" id="main__unit">
+        <div class="main__area">
+          <input class="main__input" type="tel" id="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
+          <button class="main__submit" type="submit">Оставить заявку</button>
+        </div>
+        <p class="main__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class="main__personal" href="./privacy" target="_blank">политикой конфиденциальности</a></p>
       </form>
     </div>
-    <img src="<%=require('../src/images/main/iphone-14-pro.svg')%>" alt="айфон" class="main__img">
+    <img src="<%=require('../src/images/main/Group.jpg')%>" alt="мокап" class="main__img">
   </section>
 
   <section class="section technologies" id="technologies">
     <h2 class="technologies__title">Технологии</h2>
-    <ul class="technologies__list">
-      <ul class="technologies__block">
-        <ul class="technologies__item">
-          <li><h3 class="technologies__name">Диагностика</h3></li>
-          <li><img src="<%=require('../src/images/technology/diagnostic2.webp')%>" alt="диагностика" class="technologies__img"></li>
-          <li><p class="technologies__text">Первоначально необходимо выполнить профессиональную диагностику неполадки, чтобы точно определить не повредился ли сам дисплей, сенсор и другие компоненты.</p></li>
-          <li class="technologies__link"><a class="technologies__ref">Узнать подробнее</a></li>
-        </ul>
-      </ul>
-      <ul class="technologies__block">
-        <ul class="technologies__item">
-          <li><h3 class="technologies__name">Демонтаж стекла</h3></li>
-          <li><img src="<%=require('../src/images/technology/repair.jpg')%>" alt="ремонт" class="technologies__img"></li>
-          <li><p class="technologies__text">Далее отключается аккумулятор и снимается дисплей. Демонтаж разбитого стекла осуществляется при помощи нагрева и «спиливания» на специальном станке. В завершении остатки клеевого состава удаляются и очищается матрица.</p></li>
-          <li><a class="technologies__ref">Узнать подробнее</a></li>
-        </ul>
-      </ul>
-      <ul class="technologies__block">
-        <ul class="technologies__item">
-          <li><h3 class="technologies__name">Установка нового стекла</h3></li>
-          <li><img src="<%=require('../src/images/technology/repair3.webp')%>" alt="ремонт" class="technologies__img"></li>
-          <li><p class="technologies__text">Этот этап является наиболее важным, так как дисплейный блок представляет из себя цельный модуль, каким он и должен остаться. Для этого мы применяется специальная технология, при которой производится установка специальной пленки для монтажа стекла на матрицу, что позволяет исключить использование клея. Монтаж стекла на пленку производится под давлением и при определенной температуре</p></li>
-          <li class="technologies__link"><a class="technologies__ref">Узнать подробнее</a></li>
-        </ul>
-      </ul>
-      <ul class="technologies__block">
-        <ul class="technologies__item">
-          <li><h3 class="technologies__name">Тестирование</h3></li>
-          <li><img src="<%=require('../src/images/technology/test2.jpg')%>" alt="тестирование" class="technologies__img"></li>
-          <li><p class="technologies__text">После установки стекла мы тестируем работу дисплея, качество изображения, тачскрин и олеофобное покрытие. После этого готовый заказ выдается клиенту с гарантией сервиса.</p></li>
-          <li><a class="technologies__ref">Узнать подробнее</a></li>
-        </ul>
-      </ul>
-    </ul>
+    <div class="technologies__list">
+      <div class="technologies__block">
+        <div class="technologies__item">
+          <h3 class="technologies__name">Диагностика</h3>
+          <img src="<%=require('../src/images/technology/diagnostic2.webp')%>" alt="диагностика" class="technologies__img">
+          <p class="technologies__text">Первоначально необходимо выполнить профессиональную диагностику неполадки, чтобы точно определить не повредился ли сам дисплей, сенсор и другие компоненты.</p>
+          <a class="technologies__ref">Узнать подробнее</a>
+        </div>
+      </div>
+      <div class="technologies__block">
+        <div class="technologies__item">
+          <h3 class="technologies__name">Демонтаж стекла</h3>
+          <img src="<%=require('../src/images/technology/repair.webp')%>" alt="ремонт" class="technologies__img">
+          <p class="technologies__text">Далее отключается аккумулятор и снимается дисплей. Демонтаж разбитого стекла осуществляется при помощи нагрева и «спиливания» на специальном станке. В завершении остатки клеевого состава удаляются и очищается матрица.</p>
+          <a class="technologies__ref">Узнать подробнее</a>
+        </div>
+      </div>
+      <div class="technologies__block">
+        <div class="technologies__item">
+          <h3 class="technologies__name">Установка нового стекла</h3>
+          <img src="<%=require('../src/images/technology/repair3.webp')%>" alt="ремонт" class="technologies__img">
+          <p class="technologies__text">Этот этап является наиболее важным, так как дисплейный блок представляет из себя цельный модуль, каким он и должен остаться. Для этого мы применяем специальную технологию, при которой производится установка специальной пленки для монтажа стекла на матрицу, что позволяет исключить использование клея. Монтаж стекла на пленку производится под давлением и при определенной температуре</p>
+          <a class="technologies__ref">Узнать подробнее</a>
+          </div>
+        </div>
+      <div class="technologies__block">
+        <div class="technologies__item">
+          <h3 class="technologies__name">Тестирование</h3></li>
+          <img src="<%=require('../src/images/technology/test2.webp')%>" alt="тестирование" class="technologies__img"></li>
+          <p class="technologies__text">После установки стекла мы тестируем работу дисплея, качество изображения, тачскрин и олеофобное покрытие. После этого готовый заказ выдается клиенту с гарантией сервиса.</p></li>
+          <a class="technologies__ref">Узнать подробнее</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section assistance" id="assistance">
-    
+  <section class="section cases" id="cases">
+    <h2 class="cases__title">Услуги</h2>
+    <div class="cases__block_main">
+      <p class="cases__item_main">Услуга</p>
+      <p class="cases__item_main">Стоимость работ</p>
+    </div>
+    <div class="cases__block">
+      <p class="cases__item">Диагностика</p>
+      <p class="cases__item">Бесплатно</p>
+    </div>
+    <div class="cases__block">
+      <p class="cases__item">Замена стекла на Apple Watch</p>
+      <p class="cases__item">от 2 899 ₽</p>
+    </div>
+    <div class="cases__block">
+      <p class="cases__item">Замена стекла на Apple iPhone</p>
+      <p class="cases__item">от 4 899 ₽</p>
+    </div>
+    <div class="cases__block">
+      <p class="cases__item">Замена стекла на Apple iPad</p>
+      <p class="cases__item">от 6 899 ₽</p>
+    </div>
+    <div class="cases__block">
+      <p class="cases__item">Замена стекла на Apple MacBook</p>
+      <p class="cases__item">от 9 899 ₽</p>
+    </div>
+    <div class="cases__block">
+      <p class="cases__item">Замена стекла на Samsung Galaxy</p>
+      <p class="cases__item">от 4 899 ₽</p>
+    </div>
   </section>
 
   <section class="section contacts" id="contacts">
@@ -122,37 +154,63 @@
           </div>
         </div>
       </div>
+      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A57e70c3458e69d1c4bd696e452221f5413c60d9d89c298f63c17c8bb2ec613da&amp;source=constructor" frameborder="0"></iframe>
     </div>
-    <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A57e70c3458e69d1c4bd696e452221f5413c60d9d89c298f63c17c8bb2ec613da&amp;source=constructor" frameborder="0"></iframe>
   </section>
 
-  <div class="consultation">
+  <section class="consultation">
     <h2 class="consultation__title">Получить консультацию</h2>
-    <div class="consultation__form">
-      <input type="text" class="consultation__input" placeholder="Имя">
-      <input type="text" class="consultation__input" placeholder="E-mail">
-      <input type="text" class="consultation__input contacts__input_text" placeholder="Текст">
-      <button class="consultation__button">Отправить</button>
+    <form class="consultation__form" id="consultation__form">
+      <input type="text" class="consultation__input" placeholder="Имя" name="name" required>
+      <input type="text" class="consultation__input" placeholder="E-mail" name="email" required>
+      <textarea rows="4" type="text" class="consultation__input" name="message" placeholder="Текст"></textarea>
+      <button class="consultation__button" type="submit">Отправить</button>
+      <p class="consultation__caption">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class="consultation__personal" href="./privacy" target="_blank">политикой конфиденциальности</a></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__block">
+      <div class="footer__unit">
+        <h2 class="footer__title">Proglass</h2>
+        <p class="footer__address">г. Уфа, ул. Софьи Перовской, 46</p>
+        <a class="footer__personal" href="./privacy" target="_blank">Политика конфиденциальности</a>
+      </div>
+      <ul class="footer__links">
+        <li class="footer__ref"><a class="footer__ref" href="#main">Главная</a></li>
+        <li class="footer__ref"><a class="footer__ref" href="#technologies">Технологии</a></li>
+        <li class="footer__ref"><a class="footer__ref" href="#cases">Услуги</a></li>
+        <li class="footer__ref"><a class="footer__ref" href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="footer__schedule">
+        <p class="footer__item">График работы:</p>
+        <p class="footer__item">Пн-Пт: 10:00 - 20:00</p>
+        <p class="footer__item">Сб: 12:00 - 17:00</p>
+        <p class="footer__item">Вс: выходной</p>
+      </div>
+      <a class="footer__call">Получить консультацию</a>
     </div>
-  </div>
+  </footer>
 
   <section class="copyright">
-    <p class="copyright__title">ИП Загидуллин Тимур Рамилевич</p>
-    <p class="copyright__subtitle">Все права защищены. ©2014 - 2022</p>
+    <div class="copyright__block">
+      <p class="copyright__title">ИП Загидуллин Тимур Рамилевич</p>
+      <p class="copyright__subtitle">Все права защищены. ©2014 - 2023</p>
+      <p class="copyright__design">Разработано в <a class="copyright__ref" href="https://gskovdesign.ru/" target="_blank">gskovdesign</a></p>
+    </div>
   </section>
 
   <div class="popup" id="callPopup">
     <div class="popup__container">
       <button class="popup__close-button" type="button"></button>
-      <form class="popup__form" name="popup-form" id="popup-form" action="sendmail.php" method="POST">
-        <input type="hidden" name="admin_email[]" value="gusakov.den@mail.ru">
+      <form class="popup__form" name="popup-form" id="popup-form">
         <h3 class="popup__title">Оставить заявку</h3>
         <p class="popup__subtitle">Мы перезвоним в течение 15 минут</p>
         <section class="popup__form-section">
           <input type="tel" data-validate-field="tel" class="popup__input popup__input_req popup__input_tel" id="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
           <button class="popup__submit-button" type="submit">Отправить</button>
         </section>
-        <p class="popup__text">Нажимая кнопку "Отправить" я даю согласие на обработку персональных данных</p>
+        <p class="popup__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class="popup__personal" href="./privacy.html" target="_blank">политикой конфиденциальности</a></p>
       </form>
     </div>
   </div>
@@ -160,8 +218,7 @@
   <div class="popup" id="thanksPopup">
     <div class="popup__container">
       <button class="popup__close-button" type="button"></button>
-      <form class="popup__form" name="popup-form" id="popup-form" action="sendmail.php" method="POST">
-        <input type="hidden" name="admin_email[]" value="gusakov.den@mail.ru">
+      <form class="popup__form" name="popup-form" id="popup-form">
         <h3 class="popup__title">Спасибо за заявку!</h3>
         <p class="popup__subtitle">Мы скоро перезвоним Вам</p>
         <section class="popup__form-section">

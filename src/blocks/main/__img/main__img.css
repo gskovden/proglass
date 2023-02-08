@@ -1,3 +1,36 @@
 .main__img {
-  height: 500px;
+  height: 300px;
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .main__img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main__img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main__img {
+    height: 150px;
+    grid-area: img;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main__img {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main__img {
+    height: 100px;
+  }
 }

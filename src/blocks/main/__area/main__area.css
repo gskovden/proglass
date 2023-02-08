@@ -1,0 +1,12 @@
+.main__area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 500px) {
+  .main__area {
+    flex-direction: column;
+  }
+}

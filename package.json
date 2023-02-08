@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "body-parser": "^1.20.1",
+    "copy-webpack-plugin": "^11.0.0",
     "core-js": "^3.26.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

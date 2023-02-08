@@ -1,15 +1,12 @@
 .header__ref {
   text-decoration: none;
-  color: black;
-  font-weight: 700;
-  font-size: 18px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
   padding: 5px;
   }
 
 .header__ref:hover {
-  border-bottom: 3px solid palevioletred;
-}
-
-.header__ref[aria-current="page"] {
-  border-bottom: 3px solid palevioletred;
+  border-bottom: 1px solid #FF6600;
+  color: #FF6600;
 }

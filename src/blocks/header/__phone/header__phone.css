@@ -7,3 +7,7 @@
   padding: 0;
   text-decoration: none;
 }
+
+.header__phone:hover {
+  opacity: .8;
+}

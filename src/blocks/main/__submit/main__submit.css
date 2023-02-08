@@ -1,5 +1,5 @@
 .main__submit {
-  background-color: #FFA800;
+  background-color: #FF6600;
   border-radius: 100px;
   border: none;
   color: white;
@@ -9,5 +9,17 @@
 }
 
 .main__submit:hover {
-  opacity: .8;
+  opacity: .9;
+}
+
+@media screen and (max-width: 1400px) {
+  .main__submit {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main__submit {
+    width: 200px;
+  }
 }

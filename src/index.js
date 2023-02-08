@@ -2,6 +2,7 @@ import './pages/index.css';
 import Inputmask from "../inputmask.es6.js";
 
 const headerCall = document.querySelector('.header__call');
+const footerCall = document.querySelector('.footer__call');
 const popup = document.querySelector('.popup');
 const closeButton = document.querySelector('.popup__close-button');
 const popupForm = document.forms["popup-form"];
@@ -43,26 +44,12 @@ const closePopupClickOverlay = function (event) {
 //обработчики событий
 headerCall.addEventListener('click', openPopup);
 // getConsultBurger.addEventListener('click', openPopup);
+footerCall.addEventListener('click', openPopup);
 closeButton.addEventListener('mousedown', closePopup);
 popup.addEventListener('mousedown', closePopupClickOverlay);
 learnMore.forEach(el => {
 	el.addEventListener("click", openPopup);
 });
-
-
-//плавная прокрутка
-const anchors = document.querySelectorAll('a[href*="#"]');
-
-for (let anchor of anchors) {
-	anchor.addEventListener('click', function(e) {
-		e.preventDefault();
-		const blockID = anchor.getAttribute('href');
-		document.querySelector('' + blockID).scrollIntoView({
-			behavior: "smooth",
-			block: "start"
-		})
-	})
-}
 
 //маска телефона
 let selector = document.querySelectorAll('input[type="tel"]');
@@ -88,3 +75,57 @@ window.addEventListener('scroll', () => {
 	}
 });
 
+//отправка формы
+document.getElementById("popup-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const serviceID = "service_yrbmh46";
+  const templateID = "template_yha8z6g";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      document.querySelector(".popup__input").value = "";
+      callPopup.classList.remove('popup_opened');
+      thanksPopup.classList.add('popup_opened');
+    },
+    (err) => {
+      alert(JSON.stringify(err));
+    }
+  );
+});
+
+document.getElementById("main__unit").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const serviceID = "service_yrbmh46";
+  const templateID = "template_yha8z6g";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      document.querySelector(".main__input").value = "";
+      thanksPopup.classList.add('popup_opened');
+    },
+    (err) => {
+      alert(JSON.stringify(err));
+    }
+  );
+});
+
+document.getElementById("consultation__form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const serviceID = "service_yrbmh46";
+  const templateID = "template_yha8z6g";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      document.querySelector("#name").value = "";
+      document.querySelector("#email").value = "";
+      document.querySelector("#message").value = "";
+      thanksPopup.classList.add('popup_opened');
+    },
+    (err) => {
+      alert(JSON.stringify(err));
+    }
+  );
+});

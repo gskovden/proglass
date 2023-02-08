@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   entry: { main: './src/index.js' },
@@ -17,7 +19,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, './dist'), // путь, куда "смотрит" режим разработчика
     compress: true, // это ускорит загрузку в режиме разработки
-    port: 8081, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
+    port: 8080, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
 
     open: true // сайт будет открываться сам при запуске npm run dev
   },
@@ -53,6 +55,26 @@ module.exports = {
         favicon: 'src/images/logo/logo.ico'
       }),
       new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
+      new CopyWebpackPlugin({
+        patterns: [
+            // {
+            //     from: __dirname + '/src/sendmail.php', // откуда
+            //     to: __dirname + '/dist' // куда
+            // },
+            {
+              from: __dirname + '/inputmask.es6.js', // откуда
+              to: __dirname + '/dist' // куда
+          },
+          {
+            from: __dirname + '/inputmask.js', // откуда
+            to: __dirname + '/dist' // куда
+        },
+        {
+          from: __dirname + '/.htaccess', // откуда
+          to: __dirname + '/dist' // куда
+      }
+        ]
+    }),
       new CleanWebpackPlugin(),
     ] 
   }; 
