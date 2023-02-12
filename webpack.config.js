@@ -54,6 +54,11 @@ module.exports = {
         template: 'src/index.html',
         favicon: 'src/images/logo/logo.ico'
       }),
+      new HtmlWebpackPlugin({
+        filename: 'privacy.html',
+        template: 'src/privacy.html',
+        favicon: 'src/images/logo/logo.ico'
+      }),
       new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
       new CopyWebpackPlugin({
         patterns: [
