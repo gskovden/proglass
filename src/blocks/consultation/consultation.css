@@ -7,7 +7,7 @@
   margin: 0 50px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .consultation {
     margin: 0 25px;
   }

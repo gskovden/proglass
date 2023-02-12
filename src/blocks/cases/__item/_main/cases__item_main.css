@@ -4,3 +4,17 @@
   color: #2B2738;
   margin: 0;
 }
+
+@media screen and (max-width: 340px) {
+  .cases__item_main {
+    max-width: 40%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cases__item_main {
+    font-size: 15px;
+  }
+}

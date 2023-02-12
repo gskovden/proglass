@@ -14,3 +14,9 @@
 .header__call:hover {
   opacity: .9;
 }
+
+@media screen and (max-width: 700px) {
+  .header__call {
+    display: none;
+  }
+}

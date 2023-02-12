@@ -5,6 +5,18 @@
   justify-content: space-around;
 }
 
+@media screen and (max-width: 1000px) {
+  .main__area {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .main__area {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .main__area {
     flex-direction: column;

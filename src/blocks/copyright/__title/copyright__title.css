@@ -5,14 +5,9 @@
   color: grey;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 590px) {
   .copyright__title {
     font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .copyright__title {
     margin-bottom: 20px;
     margin-top: 10px;
   }

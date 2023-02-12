@@ -3,17 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ремонт и профессиональная замена стекол на устройствах Apple iPhone, iPad, Watch, MacBook, Samsung Galaxy. Уфа, ул. Софьи Перовской, 46">
   <title>ProGlass</title>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
       (function() {
           // https://dashboard.emailjs.com/admin/account
-          emailjs.init('fP_nTRawqJC3YlV0e');
+          emailjs.init('O2oGmvNJtrKZnzNWj');
       })();
   </script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(92389584, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92389584" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body class="page">
   <header class="header">
+    <div class="header__burger">
+      <div class="header__burger-btn">
+        <span class="header__burger-item"></span>
+        <span class="header__burger-item"></span>
+        <span class="header__burger-item"></span>
+      </div>
+    </div>
     <div class="header__block">
       <a class="header__logo" href="#main"><img src="<%=require('../src/images/logo/logo.webp')%>" alt="лого" class="logo"></a>
         <ul class="header__links">
@@ -28,6 +52,33 @@
       </a>
       <a class="header__call">Получить консультацию</a>
     </div>
+    <div class="header__burger-type">
+      <div class="header__burger-links">
+        <a class="header__logo-burger" href="#main"><img src="<%=require('../src/images/logo/logo.webp')%>" alt="логотип" class="logo__burger"></a>
+        <ul class="header__burger-list">
+          <li class="header__link"><a class="header__ref" href="#main">Главная</a></li>
+          <li class="header__link"><a class="header__ref" href="#technologies">Технологии</a></li>
+          <li class="header__link"><a class="header__ref" href="#cases">Услуги</a></li>
+          <li class="header__link"><a class="header__ref" href="#contacts">Контакты</a></li>
+        </ul>
+        <a class="header__consult-burger">Получить консультацию</a>
+        <a class="header__area" href="tel:+79613599933">
+          <img src="<%=require('../src/images/header/phone.svg')%>" alt="телефон" class="header__img">
+          <p class="header__burger-link">+7 961 35 999 33</p>
+        </a>
+        <a href="#contacts" class="header__area">
+          <img src="<%=require('../src/images/header/address.svg')%>" alt="адрес" class="header__img">
+          <p class="header__burger-link">г. Уфа, ул. Софьи Перовской, 46</p>
+        </a>
+        <div class="header__social">
+          <a href="https://vk.com/proglassufa" target="_blank" class="header__item"><img src="<%=require('../src/images/contacts/VK.svg')%>" alt="ВК" class="header__icon"></a>
+          <a href="https://wa.me/79613599933" target="_blank" class="header__item"><img src="<%=require('../src/images/contacts/WhatsApp.svg')%>" alt="ватсап" class="header__icon"></a>
+          <a href="https://t.me/+79613599933" target="_blank" class="header__item"><img src="<%=require('../src/images/contacts/Telegram.svg')%>" alt="телеграм" class="header__icon"></a>
+          <a href="viber://chat?number=%2B79613599933" target="_blank" class="header__item"><img src="<%=require('../src/images/contacts/Viber.svg')%>" alt="вайбер" class="header__icon"></a>
+        </div>
+        <span class="header__design">Разработано в<a class="header__design_link" href="https://gskovdesign.ru/" target="_blank">&nbsp;gskovdesign.ru</a></span>
+      </div>
+    </div>
   </header>
 
   <section class="section main" id="main">
@@ -41,7 +92,7 @@
         <p class="main__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class="main__personal" href="./privacy" target="_blank">политикой конфиденциальности</a></p>
       </form>
     </div>
-    <img src="<%=require('../src/images/main/Group.jpg')%>" alt="мокап" class="main__img">
+    <img src="<%=require('../src/images/main/mockup.webp')%>" alt="мокап" class="main__img">
   </section>
 
   <section class="section technologies" id="technologies">
@@ -67,7 +118,7 @@
         <div class="technologies__item">
           <h3 class="technologies__name">Установка нового стекла</h3>
           <img src="<%=require('../src/images/technology/repair3.webp')%>" alt="ремонт" class="technologies__img">
-          <p class="technologies__text">Этот этап является наиболее важным, так как дисплейный блок представляет из себя цельный модуль, каким он и должен остаться. Для этого мы применяем специальную технологию, при которой производится установка специальной пленки для монтажа стекла на матрицу, что позволяет исключить использование клея. Монтаж стекла на пленку производится под давлением и при определенной температуре</p>
+          <p class="technologies__text">Этот этап является наиболее важным, так как дисплейный блок представляет из себя цельный модуль, каким он и должен остаться. Для этого мы применяем специальную технологию, при которой производится установка специальной пленки для монтажа стекла на матрицу, что позволяет исключить использование клея. Монтаж стекла на пленку производится под давлением и при определенной температуре.</p>
           <a class="technologies__ref">Узнать подробнее</a>
           </div>
         </div>
@@ -85,8 +136,8 @@
   <section class="section cases" id="cases">
     <h2 class="cases__title">Услуги</h2>
     <div class="cases__block_main">
-      <p class="cases__item_main">Услуга</p>
-      <p class="cases__item_main">Стоимость работ</p>
+      <p class="cases__item_main">Наименование</p>
+      <p class="cases__item_main">Стоимость</p>
     </div>
     <div class="cases__block">
       <p class="cases__item">Диагностика</p>
@@ -121,33 +172,45 @@
         <div class="contacts__unit">
           <img src="<%=require('../src/images/contacts/phone.svg')%>" alt="телефон" class="contacts__icon">
           <div class="contacts__area">
-            <p class="contacts__name">Телефон</p>
+            <div class="contacts__piece">
+              <img src="<%=require('../src/images/contacts/phone.svg')%>" alt="телефон" class="contacts__icon_hidden">
+              <p class="contacts__name">Телефон</p>
+            </div>
             <a class="contacts__item" href="tel:+79613599933">+7 961 35 999 33</a>
           </div>
         </div>
         <div class="contacts__unit">
           <img src="<%=require('../src/images/contacts/address.svg')%>" alt="адрес" class="contacts__icon">
           <div class="contacts__area">
-            <p class="contacts__name">Адрес</p>
+            <div class="contacts__piece">
+              <img src="<%=require('../src/images/contacts/address.svg')%>" alt="адрес" class="contacts__icon_hidden">
+              <p class="contacts__name">Адрес</p>
+            </div>
             <p class="contacts__item">г. Уфа, ул. Софьи Перовской, 46</p>
           </div>
         </div>
         <div class="contacts__unit">
           <img src="<%=require('../src/images/contacts/search.svg')%>" alt="адрес" class="contacts__icon">
           <div class="contacts__area">
-            <p class="contacts__name">Напишите нам</p>
+            <div class="contacts__piece">
+              <img src="<%=require('../src/images/contacts/search.svg')%>" alt="адрес" class="contacts__icon_hidden">
+              <p class="contacts__name">Напишите нам</p>
+            </div>
             <div class="contacts__social">
               <a href="https://vk.com/proglassufa" target="_blank"><img src="<%=require('../src/images/contacts/VK.svg')%>" alt="ВК" class="contacts__img"></a>
-              <a href="https://vk.com/proglassufa" target="_blank"><img src="<%=require('../src/images/contacts/WhatsApp.svg')%>" alt="ватсап" class="contacts__img"></a>
-              <a href="https://vk.com/proglassufa" target="_blank"><img src="<%=require('../src/images/contacts/Telegram.svg')%>" alt="телеграм" class="contacts__img"></a>
-              <a href="https://vk.com/proglassufa" target="_blank"><img src="<%=require('../src/images/contacts/Viber.svg')%>" alt="вайбер" class="contacts__img"></a>
+              <a href="https://wa.me/79613599933" target="_blank"><img src="<%=require('../src/images/contacts/WhatsApp.svg')%>" alt="ватсап" class="contacts__img"></a>
+              <a href="https://t.me/+79613599933" target="_blank"><img src="<%=require('../src/images/contacts/Telegram.svg')%>" alt="телеграм" class="contacts__img"></a>
+              <a href="viber://chat?number=%2B79613599933" target="_blank"><img src="<%=require('../src/images/contacts/Viber.svg')%>" alt="вайбер" class="contacts__img"></a>
             </div>
           </div>
         </div>
         <div class="contacts__unit">
           <img src="<%=require('../src/images/contacts/clock.svg')%>" alt="адрес" class="contacts__icon">
           <div class="contacts__area">
-            <p class="contacts__name">График работы</p>
+            <div class="contacts__piece">
+              <img src="<%=require('../src/images/contacts/clock.svg')%>" alt="адрес" class="contacts__icon_hidden">
+              <p class="contacts__name">График работы</p>
+            </div>
             <p class="contacts__item">Пн-Пт: 10:00 - 20:00</p>
             <p class="contacts__item">Сб: 12:00 - 17:00</p>
             <p class="contacts__item">Вс: выходной</p>
@@ -161,9 +224,9 @@
   <section class="consultation">
     <h2 class="consultation__title">Получить консультацию</h2>
     <form class="consultation__form" id="consultation__form">
-      <input type="text" class="consultation__input" placeholder="Имя" name="name" required>
-      <input type="text" class="consultation__input" placeholder="E-mail" name="email" required>
-      <textarea rows="4" type="text" class="consultation__input" name="message" placeholder="Текст"></textarea>
+      <input type="text" class="consultation__input" placeholder="Имя" name="name" id="name" required>
+      <input type="email" class="consultation__input" placeholder="E-mail" name="email" id="email" required>
+      <textarea rows="4" type="text" class="consultation__input" name="message" id="message" placeholder="Текст"></textarea>
       <button class="consultation__button" type="submit">Отправить</button>
       <p class="consultation__caption">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class="consultation__personal" href="./privacy" target="_blank">политикой конфиденциальности</a></p>
     </form>
@@ -207,7 +270,7 @@
         <h3 class="popup__title">Оставить заявку</h3>
         <p class="popup__subtitle">Мы перезвоним в течение 15 минут</p>
         <section class="popup__form-section">
-          <input type="tel" data-validate-field="tel" class="popup__input popup__input_req popup__input_tel" id="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
+          <input type="tel" class="popup__input" id="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
           <button class="popup__submit-button" type="submit">Отправить</button>
         </section>
         <p class="popup__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class="popup__personal" href="./privacy.html" target="_blank">политикой конфиденциальности</a></p>

@@ -13,7 +13,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
   .copyright__block {
     flex-direction: column;
     justify-content: flex-start;

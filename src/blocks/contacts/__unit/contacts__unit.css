@@ -2,3 +2,27 @@
   display: flex;
   flex-direction: row;
 }
+
+@media screen and (max-width: 1000px) {
+  .contacts__unit {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contacts__unit {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contacts__unit {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contacts__unit {
+    justify-content: center;
+  }
+}

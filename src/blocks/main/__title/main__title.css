@@ -40,3 +40,9 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 310px) {
+  .main__title {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,14 @@
+.header__burger {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .header__burger {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+  }
+}

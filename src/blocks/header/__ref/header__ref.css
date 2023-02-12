@@ -10,3 +10,9 @@
   border-bottom: 1px solid #FF6600;
   color: #FF6600;
 }
+
+@media screen and (max-width: 1050px) {
+  .header__ref {
+    font-size: 22px;
+  }
+}

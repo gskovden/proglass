@@ -2,5 +2,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts__part {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contacts__part {
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+  }
 }

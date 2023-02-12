@@ -17,3 +17,9 @@
     min-height: unset;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .main {
+    margin: 0 25px 0 25px;
+  }
+}

@@ -1,4 +1,9 @@
 .technologies {
-  margin: 0;
-  width: 100%;
+  margin: 0 50px 0 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .technologies {
+    margin: 0 25px 0 25px;
+  }
 }

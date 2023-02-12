@@ -1,0 +1,9 @@
+.header__icon {
+  width: 30px;
+  height: 30px;
+  opacity: .9;
+}
+
+.header__icon:hover {
+  opacity: 1;
+}

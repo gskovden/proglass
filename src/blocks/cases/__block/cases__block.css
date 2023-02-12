@@ -5,3 +5,9 @@
   border-bottom: 1px solid grey;
   margin: 0 0 40px 0;
 }
+
+@media screen and (max-width: 500px) {
+  .cases__block {
+    align-items: center;
+  }
+}

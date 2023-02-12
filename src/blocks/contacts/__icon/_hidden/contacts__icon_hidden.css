@@ -1,0 +1,12 @@
+.contacts__icon_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .contacts__icon_hidden {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+  }
+}

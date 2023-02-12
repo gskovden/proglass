@@ -7,3 +7,9 @@
     margin: 0 50px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .cases {
+    margin: 0 25px;
+  }
+}
